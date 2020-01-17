@@ -1,4 +1,4 @@
-{% set version = '0.4.1' %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rmapshaper_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmapshaper/rmapshaper_{{ version }}.tar.gz
-  sha256: c82861aa892c8f8e5d33c4c5d5d7055ee24369051fcfa18f287f3462ef85a84d
+  sha256: 71670afb76088ccd425261b81b018cf94cca06952d17563e2df0560277591fd4
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
