@@ -1,4 +1,4 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rmapshaper_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmapshaper/rmapshaper_{{ version }}.tar.gz
-  sha256: 5e36464d7e256c56964969fc09bf71ad77067d797e04ef5814c6b547292bdbf7
+  sha256: adc403bd968de71b5a6ebbad791ae983477d818fc016719a506e4af49f54b185
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -50,13 +50,10 @@ test:
 about:
   home: https://github.com/ateucher/rmapshaper
   license: MIT
-  summary: Edit and simplify 'geojson', 'Spatial', and 'sf' objects. This is wrapper around the
-    'mapshaper' 'JavaScript' library by Matthew Bloch  <https://github.com/mbloch/mapshaper/>
-    to perform topologically-aware polygon simplification, as well as other operations
-    such as clipping, erasing, dissolving, and converting 'multi-part' to 'single-part'
-    geometries. It relies on the 'geojsonio' package for working with 'geojson' objects,
-    the 'sf'  package for working with 'sf' objects, and the 'sp' and 'rgdal' packages
-    for  working with 'Spatial' objects.
+  summary: Edit and simplify 'geojson', 'Spatial', and 'sf' objects. This is wrapper around the 'mapshaper' 'JavaScript' library by Matthew Bloch  <https://github.com/mbloch/mapshaper/>
+    to perform topologically-aware polygon simplification, as well as other operations such as clipping, erasing, dissolving, and converting 'multi-part' to 'single-part'
+    geometries. It relies on the 'geojsonio' package for working with 'geojson' objects, the 'sf'  package for working with 'sf' objects, and the 'sp' and 'rgdal'
+    packages for  working with 'Spatial' objects.
   license_family: MIT
   license_file: LICENSE
 
