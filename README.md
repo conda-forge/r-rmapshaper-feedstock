@@ -1,11 +1,11 @@
-About r-rmapshaper
-==================
+About r-rmapshaper-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmapshaper-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ateucher/rmapshaper
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmapshaper-feedstock/blob/main/LICENSE.txt)
 
 Summary: Edit and simplify 'geojson', 'Spatial', and 'sf' objects. This is wrapper around the 'mapshaper' 'JavaScript' library by Matthew Bloch  <https://github.com/mbloch/mapshaper/> to perform topologically-aware polygon simplification, as well as other operations such as clipping, erasing, dissolving, and converting 'multi-part' to 'single-part' geometries. It relies on the 'geojsonio' package for working with 'geojson' objects, the 'sf'  package for working with 'sf' objects, and the 'sp' and 'rgdal' packages for  working with 'Spatial' objects.
 
